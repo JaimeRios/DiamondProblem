@@ -23,9 +23,10 @@ estas dos a su vez heredan de forma privada ScreenViewControllerFactory::IDelega
 			___________________________________		________________________________	  
 		 	| ScreenViewControllerFactoryOwner |		| SectionControllerFactoryOwner |
 			|__________________________________|		|_______________________________|
-			
-			
-							
-							_______________
-							| IAPsampleApp |
-							|______________|
+							  ^		^
+							  |		|
+							  |		|			
+							  |		|							
+							  _______________
+							  | IAPsampleApp |
+							  |______________|
