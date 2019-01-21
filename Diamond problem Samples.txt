@@ -1,0 +1,12 @@
+El problema de diamante se presenta solucionado en los siguiendes ejemplos del you.i engine:
+
+1. videoplayer pareciera tener este problema pero en realidad las clases que hereden de dos clases que vienen de otra en comun  utilizan "nested class"
+Particularmente con la clase playerScrubberView, quien hereda de:
+	CYISceneView
+	CYIScrollBarView::Listener
+y  CYIScrollBarView hereda de CYISceneView
+
+2. En la clase ErrorNotificationViewController se hereda de
+public CYIViewController y CYIBackButtonHandler::Listener
+y CYIViewController y CYIBackButtonHandler heredan de CYIScriptableObject
+Pero como se esta usando una clase interna a CYIBackButtonHandler luego no se presenta el problema diamante
